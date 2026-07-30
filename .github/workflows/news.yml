@@ -31,8 +31,8 @@ jobs:
 
       - name: Buscar y enviar noticias
         env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.8924976431:AAEYjvO1xVICPDMWF5AojPB2u6QAMHPThts }}
-          TELEGRAM_CHAT_ID: ${{ secrets.8924976431 }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python bot.py
 
       - name: Guardar historial
